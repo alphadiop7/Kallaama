@@ -4,13 +4,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './App.css';
 import { render } from '@testing-library/react';
 
+const dictionary = [
+	{fr: 'salut', wo: 'nangadef'}, {fr: 'paix', wo: 'jaam'}, {fr: 'dieu', wo: 'yàlla'}
+];
+
 function App() {
   return (
-    <h1></h1>
-  );
-}
-
-render (
     <main>
       <div className='container-fluid mt-5'>
         <div className='row'>
@@ -18,7 +17,7 @@ render (
             <div className='mb-5'>
               <label htmlFor='FrenchTextarea' className='form-label fw-bold'>Français</label>
               <textarea className='form-control' id='FrenchTextarea' placeholder="Entrez du text" required></textarea>
-              <div className='text-danger position-absolute' id='invalid'> </div>
+              <div className='text-danger position-absolute' id='invalid'></div>
             </div>
           </div>
           <div className='col-lg-6 col-md-6 col-sm-12'>
@@ -33,5 +32,7 @@ render (
         </div>
       </div>
     </main>
-);
+  );
+}
+
 export default App;
