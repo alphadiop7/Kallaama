@@ -1,0 +1,12 @@
+button {
+    letter-spacing: 1px;
+}
+
+button.form-control {
+    box-shadow: 0 4px 6px -4px #332d2d;
+}
+
+button.form-control:focus {
+    color: #fff;
+    background-color: #0d6efd;
+  }
