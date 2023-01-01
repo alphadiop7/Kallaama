@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+  
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0d6efd;
+    width: 100%;
+}
+  
+.container-fluid {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 9px -4px #332d2d;
+    border-radius: 5px;
+}
+
+label {
+    letter-spacing: 1px;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: transparent;
+    opacity: 1;
+}
+  
+textarea {
+    resize: none;
+}
+
+button {
+    letter-spacing: 1px;
+}
+
+button.form-control {
+    box-shadow: 0 4px 6px -4px #332d2d;
+}
+
+button.form-control:focus {
+    color: #fff;
+    background-color: #0d6efd;
+}
